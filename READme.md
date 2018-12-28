@@ -1,4 +1,4 @@
-# JavaScript Interview Practice Questions
+*** JavaScript Interview Practice Questions ***
 ## Author: Tej Poudel
 
 ## Description:
