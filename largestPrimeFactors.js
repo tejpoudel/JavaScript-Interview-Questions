@@ -29,7 +29,7 @@ const primeFactors = num => {
             primeFact.push(factors[i]);
         }
     }
-    return primeFact;
+    return primeFact[primeFact.length-1];
 }
 
 console.log(primeFactors(13195));

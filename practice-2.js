@@ -2,8 +2,14 @@
 // Anagrams are two words with exactly the same letters. Order does not matter. 
 // Define a method that, given two strings, returns a boolean indicating whether they are anagrams.
 const anagrams = (string1, string2) => {
-
-}
+    str1 = string1.replace(/[^A-Za-z]+/g, '').toLowerCase().split("").sort().join("");
+    str2 = string2.replace(/[^A-Za-z]+/g, '').toLowerCase().split("").sort().join("");
+    return str2 === str1;
+  }
+  
+console.log(anagrams("Binod", "bindo"));
+console.log(anagrams("Bino", "dinob"));
+console.log(anagrams("hi how are you?", "ihwhoerayuo?"));
 
 // An isogram is a word of only non-repeating letters. Define a method that, given two isograms of the same length, 
 // returns an array of two elements indicating matches: the first number is the number of letters matched in both 
