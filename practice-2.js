@@ -2,11 +2,11 @@
 // Anagrams are two words with exactly the same letters. Order does not matter. 
 // Define a method that, given two strings, returns a boolean indicating whether they are anagrams.
 const anagrams = (string1, string2) => {
-    str1 = string1.replace(/[^A-Za-z]+/g, '').toLowerCase().split("").sort().join("");
-    str2 = string2.replace(/[^A-Za-z]+/g, '').toLowerCase().split("").sort().join("");
-    return str2 === str1;
-  }
-  
+  str1 = string1.replace(/[^A-Za-z]+/g, '').toLowerCase().split("").sort().join("");
+  str2 = string2.replace(/[^A-Za-z]+/g, '').toLowerCase().split("").sort().join("");
+  return str2 === str1;
+}
+
 console.log(anagrams("Binod", "bindo"));
 console.log(anagrams("Bino", "dinob"));
 console.log(anagrams("hi how are you?", "ihwhoerayuo?"));
@@ -48,8 +48,17 @@ const panoramicPairs = landmarks => {
 
 // numberOfXbonacciNumberToReturn is the same as N.
 const xBonacci = (startingSequence, numberOfXbonacciNumberToReturn) => {
-
+  if (startingSequence.length >= numberOfXbonacciNumberToReturn) {
+    startingSequence = startingSequence;
+  } else if (startingSequence < 4) {
+    startingSequence = startingSequence;
+  } else if (startingSequence.length < numberOfXbonacciNumberToReturn) {
+    startingSequence = startingSequence.push((startingSequence.length - 1) + (startingSequence.length - 2) + (startingSequence.length - 3));
+  }
+  return startingSequence;
 }
+
+console.log(xBonacci([1, 1, 1, 1], 8));
 // Given an array of words, remove all the occurrences of the letter 'a' in those words and return the resulting array.
 const removeLetterA = words => {
 
