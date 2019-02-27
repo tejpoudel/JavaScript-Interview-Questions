@@ -73,8 +73,25 @@ const abundant = num => {
 // greatestCommonFactor(6, 10) => 2
 // greatestCommonFactor(10, 15) => 5
 const greatestCommonFactor = (firstNumber, secondNumber) => {
-
+  let arr1 = [];
+  let arr2 = [];
+  let commonFactors = [];
+  for(let i = 0; i < firstNumber; i++) {
+    if(firstNumber % i === 0) {
+      arr1.push(i);
+    }
+  }
+   for(let i = 0; i < secondNumber; i++) {
+    if(secondNumber % i === 0) {
+      arr2.push(i);
+    }
+  }
+  
+  return commonFactors.length-1;
 }
+
+console.log(greatestCommonFactor(6, 10));
+
 // Write a method that, given a sentence without punctuation or capitalization, 
 // returns the word with the greatest number of repeated letters. Return the first word if there's a tie.
 // It doesn't matter how often individual letters repeat, just that they repeat.
