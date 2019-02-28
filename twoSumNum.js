@@ -10,7 +10,7 @@ const twoSumNum = (arr, target) => {
     let sum = arr[startIdx] + arr[endIdx];
     while (sum !== target) {
         if(sum > target) {
-            endidx--;
+            endIdx--;
         } else {
             startIdx++;
         }
@@ -21,3 +21,4 @@ const twoSumNum = (arr, target) => {
 
 console.log(twoSumNum([4, 1, 3], 7));
 console.log(twoSumNum([4, 1, 6, 3], 9));
+console.log(twoSumNum([0, 1], 1));
