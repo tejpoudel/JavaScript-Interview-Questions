@@ -20,3 +20,4 @@ const twoSumNum = (arr, target) => {
 }
 
 console.log(twoSumNum([4, 1, 3], 7));
+console.log(twoSumNum([4, 1, 6, 3], 9));
