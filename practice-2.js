@@ -138,6 +138,7 @@ const substring = (longString, shortString) => {
 const firstLastIndices = str => {
 
 }
+
 // Define a method that returns the number of times that two adjacent numbers in an array sum to n. Don't reuse numbers.
 // countAdjacentSums([1, 5, 1, 3, 3], 6) => 2
 const countAdjacentSums = (array, num) => {
